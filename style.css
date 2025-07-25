@@ -1,0 +1,22 @@
+/* style.css */
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  color: #333;
+}
+
+h1 {
+  color: purple;
+}
+
+nav a {
+  margin-right: 15px;
+  color: #5c2a9d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a {
+  color: #5c2a9d;
+}
