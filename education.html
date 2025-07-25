@@ -1,56 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Education</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('images/education.jpg'); /* ✅ path to your image */
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore my educational journey and the skills I've acquired."
+    />
+    <title>My Education</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("./images/education.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        font-family: Arial, sans-serif;
+        color: white;
+      }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6); /* Darkens background for readability */
-      padding: 40px;
-      margin: 80px auto;
-      width: 80%;
-      border-radius: 12px;
-    }
+      .overlay {
+        background: rgba(30, 30, 30, 0.75);
+        padding: 48px 40px 40px 40px;
+        margin: 80px auto;
+        width: 80%;
+        max-width: 800px;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35),
+          0 1.5px 8px 0 rgba(255, 215, 0, 0.08);
+        backdrop-filter: blur(4px);
+        border: 1.5px solid rgba(255, 255, 255, 0.18);
+      }
 
-    a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>My Educational Journey</h1>
+      h1 {
+        font-family: "Segoe UI", "Arial", sans-serif;
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+        color: #ffd700;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+        text-align: center;
+      }
 
-<p>I studied <strong>Computer Science at Zetech university</strong>, where I was introduced to the exciting world of technology and innovation. Throughout my studies, I developed a solid foundation in core areas such as:</p>
+      p,
+      ul {
+        font-size: 1.18rem;
+        line-height: 1.85;
+        color: #f8f8f8;
+        font-family: "Segoe UI", "Arial", sans-serif;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      }
 
-<ul>
-  <li><strong>Programming: </strong>  HTML, CSS, JavaScript, Python, and Java.</li>
-  <li><strong>Problem-Solving:</strong> Breaking down complex problems and designing logical solutions.</li>
-  <li><strong>Software Development:</strong> Learning how software is built, tested, and deployed in the real world.</li>
-  <li><strong>Systems & Networks:</strong> Understanding how computer systems communicate and operate securely.</li>
-  <li><strong>Project Work:</strong> Collaborating with classmates to build mini software systems and prototypes.</li>
-</ul>
+      ul {
+        margin-bottom: 32px;
+        margin-top: 0;
+        padding-left: 1.2em;
+      }
 
-<p>Beyond technical skills, I also grew in areas like communication, teamwork, research, and adaptability  which are just as important in today’s tech-driven world.</p>
+      a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+      }
+      a:hover {
+        color: #fffbe0;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>My Educational Journey</h1>
 
-<p>My university education prepared me for both <strong>technical and creative challenges</strong>, and sparked my passion for solving real-life problems through technology. It gave me the confidence to build projects, explore entrepreneurship, and dream big.</p>
+      <p>
+        I studied <strong>Computer Science at Zetech university</strong>, where
+        I was introduced to the exciting world of technology and innovation.
+        Throughout my studies, I developed a solid foundation in core areas such
+        as:
+      </p>
 
-<p><strong>I’m proud of how far I’ve come, and I’m excited for what lies ahead.</strong> My journey is just beginning.</p>
+      <ul>
+        <li>
+          <strong>Programming: </strong> HTML, CSS, JavaScript, Python, and
+          Java.
+        </li>
+        <li>
+          <strong>Problem-Solving:</strong> Breaking down complex problems and
+          designing logical solutions.
+        </li>
+        <li>
+          <strong>Software Development:</strong> Learning how software is built,
+          tested, and deployed in the real world.
+        </li>
+        <li>
+          <strong>Systems & Networks:</strong> Understanding how computer
+          systems communicate and operate securely.
+        </li>
+        <li>
+          <strong>Project Work:</strong> Collaborating with classmates to build
+          mini software systems and prototypes.
+        </li>
+      </ul>
 
-    <a href="index.html">← Back to Home</a>
-  </div>
-</body>
+      <p>
+        Beyond technical skills, I also grew in areas like communication,
+        teamwork, research, and adaptability which are just as important in
+        today’s tech-driven world.
+      </p>
+
+      <p>
+        My university education prepared me for both
+        <strong>technical and creative challenges</strong>, and sparked my
+        passion for solving real-life problems through technology. It gave me
+        the confidence to build projects, explore entrepreneurship, and dream
+        big.
+      </p>
+
+      <p>
+        <strong
+          >I’m proud of how far I’ve come, and I’m excited for what lies
+          ahead.</strong
+        >
+        My journey is just beginning.
+      </p>
+
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </body>
 </html>
