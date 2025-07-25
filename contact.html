@@ -2,59 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with me for collaborations, questions, or just to say hi!"
+    />
     <title>Contact Me</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <style>
       body {
         margin: 0;
         padding: 0;
-        background-color: #f4f1e6;
-        font-family: Arial, sans-serif;
+        background: linear-gradient(120deg, #f4f1e6 60%, #ffe066 100%);
+        font-family: "Segoe UI", Arial, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
       }
 
       .container {
         text-align: center;
-        padding: 40px;
-        background-color: rgba(255, 255, 255, 0.95);
-        border-radius: 15px;
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        width: 90%;
-        max-width: 500px;
+        padding: 48px 36px 36px 36px;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18),
+          0 1.5px 8px 0 rgba(204, 0, 0, 0.08);
+        width: 92%;
+        max-width: 480px;
+        border: 1.5px solid #ffe066;
       }
 
       h1 {
         margin-bottom: 20px;
-        color: #333;
+        color: #cc0000;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(255, 224, 102, 0.08);
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.13rem;
         margin: 10px 0;
+        color: #333;
+        text-shadow: 0 1px 4px rgba(255, 224, 102, 0.08);
       }
 
       a {
         color: #cc0000;
         text-decoration: none;
-        font-weight: bold;
+        font-weight: 600;
+        transition: color 0.2s;
       }
 
       a:hover {
-        color: #000;
+        color: #ffe066;
+        text-decoration: underline;
       }
 
       form {
         margin-top: 20px;
         text-align: left;
+        font-size: 1rem;
       }
 
       label {
         display: block;
         margin-bottom: 10px;
         font-size: 16px;
+        font-weight: 500;
+        color: #cc0000;
       }
 
       input,
@@ -63,32 +81,58 @@
         padding: 10px;
         margin-top: 5px;
         border: 1px solid #ccc;
-        border-radius: 6px;
-        font-size: 16px;
+        border-radius: 8px;
+        font-size: 1rem;
         box-sizing: border-box;
+        background: #fffbe0;
+        color: #333;
+        transition: border 0.2s;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1.5px solid #cc0000;
+        outline: none;
       }
 
       input[type="submit"] {
         margin-top: 15px;
-        background-color: #cc0000;
-        color: white;
+        background: linear-gradient(90deg, #cc0000 70%, #ffe066 100%);
+        color: #fff;
         border: none;
         cursor: pointer;
-        transition: background 0.3s;
+        font-weight: 600;
+        font-size: 1.08rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(204, 0, 0, 0.08);
+        transition: background 0.3s, color 0.2s;
       }
 
       input[type="submit"]:hover {
-        background-color: #990000;
+        background: linear-gradient(90deg, #990000 70%, #ffe066 100%);
+        color: #ffe066;
       }
 
       .contact-info {
         margin-bottom: 20px;
+        background: rgba(255, 224, 102, 0.13);
+        border-radius: 10px;
+        padding: 12px 0 8px 0;
+        box-shadow: 0 1px 4px rgba(255, 224, 102, 0.08);
       }
 
       .back-link {
         display: block;
         margin-top: 20px;
-        font-size: 18px;
+        font-size: 1.1rem;
+        color: #cc0000;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+      }
+      .back-link:hover {
+        color: #ffe066;
+        text-decoration: underline;
       }
     </style>
 
