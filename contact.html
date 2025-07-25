@@ -1,139 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact Me</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f4f1e6;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .container {
-      text-align: center;
-      padding: 40px;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 15px;
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-      width: 90%;
-      max-width: 500px;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      color: #333;
-    }
-
-    p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    a {
-      color: #cc0000;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      color: #000;
-    }
-
-    form {
-      margin-top: 20px;
-      text-align: left;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 10px;
-      margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 16px;
-      box-sizing: border-box;
-    }
-
-    input[type="submit"] {
-      margin-top: 15px;
-      background-color: #cc0000;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #990000;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .back-link {
-      display: block;
-      margin-top: 20px;
-      font-size: 18px;
-    }
-  </style>
-
-  <script>
-    function validateForm() {
-      let name = document.forms["contactForm"]["name"].value.trim();
-      let message = document.forms["contactForm"]["message"].value.trim();
-
-      if (name === "") {
-        alert("Please enter your name.");
-        return false;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get in touch with me for collaborations, questions, or just to say hi!"
+    />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(120deg, #f4f1e6 60%, #ffe066 100%);
+        font-family: "Segoe UI", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
       }
 
-      if (message === "") {
-        alert("Please write a message.");
-        return false;
+      .container {
+        text-align: center;
+        padding: 48px 36px 36px 36px;
+        background: rgba(255, 255, 255, 0.92);
+        border-radius: 22px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.18),
+          0 1.5px 8px 0 rgba(204, 0, 0, 0.08);
+        width: 92%;
+        max-width: 480px;
+        border: 1.5px solid #ffe066;
       }
 
-      alert("Thank you for reaching out, " + name + "! 😊");
-      return true;
-    }
-  </script>
-</head>
-<body>
-  <div class="container">
-    <h1> Contact Me</h1>
+      h1 {
+        margin-bottom: 20px;
+        color: #cc0000;
+        font-size: 2.2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-shadow: 0 2px 8px rgba(255, 224, 102, 0.08);
+      }
 
-    <div class="contact-info">
-      <p> Email: <a href="mailto:essenya2003@gmail.com">essenya2003@gmail.com</a></p>
-      <p> Instagram: <a href="https://instagram.com/E_staress_ie" target="_blank">@E_staress_ie</a></p>
-      <p> TikTok: @Yarns with Essy</p>
+      p {
+        font-size: 1.13rem;
+        margin: 10px 0;
+        color: #333;
+        text-shadow: 0 1px 4px rgba(255, 224, 102, 0.08);
+      }
+
+      a {
+        color: #cc0000;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.2s;
+      }
+
+      a:hover {
+        color: #ffe066;
+        text-decoration: underline;
+      }
+
+      form {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 1rem;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #cc0000;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        box-sizing: border-box;
+        background: #fffbe0;
+        color: #333;
+        transition: border 0.2s;
+      }
+
+      input:focus,
+      textarea:focus {
+        border: 1.5px solid #cc0000;
+        outline: none;
+      }
+
+      input[type="submit"] {
+        margin-top: 15px;
+        background: linear-gradient(90deg, #cc0000 70%, #ffe066 100%);
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1.08rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(204, 0, 0, 0.08);
+        transition: background 0.3s, color 0.2s;
+      }
+
+      input[type="submit"]:hover {
+        background: linear-gradient(90deg, #990000 70%, #ffe066 100%);
+        color: #ffe066;
+      }
+
+      .contact-info {
+        margin-bottom: 20px;
+        background: rgba(255, 224, 102, 0.13);
+        border-radius: 10px;
+        padding: 12px 0 8px 0;
+        box-shadow: 0 1px 4px rgba(255, 224, 102, 0.08);
+      }
+
+      .back-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #cc0000;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+      }
+      .back-link:hover {
+        color: #ffe066;
+        text-decoration: underline;
+      }
+    </style>
+
+    <script>
+      function validateForm() {
+        let name = document.forms["contactForm"]["name"].value.trim();
+        let message = document.forms["contactForm"]["message"].value.trim();
+
+        if (name === "") {
+          alert("Please enter your name.");
+          return false;
+        }
+
+        if (message === "") {
+          alert("Please write a message.");
+          return false;
+        }
+
+        alert("Thank you for reaching out, " + name + "! 😊");
+        return true;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Me</h1>
+
+      <div class="contact-info">
+        <p>
+          Email:
+          <a href="mailto:essenya2003@gmail.com">essenya2003@gmail.com</a>
+        </p>
+        <p>
+          Instagram:
+          <a href="https://instagram.com/E_staress_ie" target="_blank"
+            >@E_staress_ie</a
+          >
+        </p>
+        <p>TikTok: @Yarns with Essy</p>
+      </div>
+
+      <form name="contactForm" onsubmit="return validateForm()">
+        <label
+          >Name:
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+
+        <label
+          >Message:
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Write me something sweet! 😊"
+          ></textarea>
+        </label>
+
+        <input type="submit" value="Send Message" />
+      </form>
+
+      <a class="back-link" href="index.html">← Back to Home</a>
     </div>
-
-    <form name="contactForm" onsubmit="return validateForm()">
-      <label>Name:
-        <input type="text" name="name" placeholder="Your name">
-      </label>
-
-      <label>Message:
-        <textarea name="message" rows="4" placeholder="Write me something sweet! 😊"></textarea>
-      </label>
-
-      <input type="submit" value="Send Message">
-    </form>
-
-    <a class="back-link" href="index.html">← Back to Home</a>
-  </div>
-</body>
+  </body>
 </html>

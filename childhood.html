@@ -1,53 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Childhood</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      background-image: url('images/childhood.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A glimpse into my childhood and early influences."
+    />
+    <title>My Childhood</title>
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        background-image: url("./images/childhood.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        color: white;
+        font-family: "Poppins", Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 10px;
-      max-width: 750px;
-      text-align: center;
-    }
+      .overlay {
+        background: rgba(30, 30, 30, 0.75);
+        padding: 48px 40px 40px 40px;
+        border-radius: 18px;
+        max-width: 700px;
+        text-align: center;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35),
+          0 1.5px 8px 0 rgba(255, 215, 0, 0.08);
+        backdrop-filter: blur(4px);
+        border: 1.5px solid rgba(255, 255, 255, 0.18);
+      }
 
-    a {
-      color: #ffd700;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>My Childhood 🌸</h1>
-    <p>I was born and raised in Lamu Kenya, surrounded by a loving family that believed in strong values and creativity. My childhood was filled with warmth, exploration, and simple joys that shaped my outlook on life.
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+        color: #ffd700;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
 
-     I loved spending time outdoors playing local games like; Kati,Bano and many others, helping my parents with chores, and spending time with neighbors and cousins. These were moments of fun and bonding that built my character and taught me kindness.
+      p {
+        font-size: 1.18rem;
+        line-height: 1.85;
+        color: #f8f8f8;
+        margin-bottom: 32px;
+        text-align: left;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      }
 
-    I was naturally curious, always asking questions and eager to learn. I enjoyed storytelling, making crafts, and pretending to be a teacher or a nurse my imagination had no limits!
+      a {
+        color: #ffd700;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+      }
+      a:hover {
+        color: #fffbe0;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>My Childhood 🌸</h1>
 
-    Even at a young age, I found joy in creating. Whether it was drawing, folding paper into shapes, or later discovering crochet, I always felt happiest when I was making something with my hands.
+      <p>
+        I was born and raised in <strong>Lamu, Kenya</strong>, surrounded by a
+        loving family that believed in strong values and creativity. My
+        childhood was filled with warmth, exploration, and simple joys that
+        shaped my outlook on life.<br /><br />
+        I loved spending time outdoors playing local games like <em>Kati</em>,
+        <em>Bano</em>, and many others, helping my parents with chores, and
+        bonding with neighbors and cousins. These moments of fun and
+        togetherness built my character and taught me kindness.<br /><br />
+        I was naturally curious, always asking questions and eager to learn. I
+        enjoyed storytelling, making crafts, and pretending to be a teacher or a
+        nurse—my imagination had no limits! Even at a young age, I found joy in
+        creating. Whether it was drawing, folding paper into shapes, or later
+        discovering crochet, I always felt happiest when making something with
+        my hands.<br /><br />
+        Those early experiences taught me to be <strong>confident</strong>,
+        <strong>resourceful</strong>, and <strong>empathetic</strong>. They
+        inspired my love for learning and creating, and continue to influence
+        the person I am becoming.
+      </p>
 
-    Those early experiences taught me to be confident, resourceful, and empathetic. They inspired my love for learning and creating and continue to influence the person I am becoming.</p>
-
-    <br>
-    <a href="index.html">← Back to Home</a>
-  </div>
-</body>
+      <br />
+      <a href="./index.html">← Back to Home</a>
+    </div>
+  </body>
 </html>

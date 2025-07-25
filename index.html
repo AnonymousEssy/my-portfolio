@@ -1,150 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Esther's Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esther's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-    /* Background blur overlay */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-image: url('images/index.jpg');
-      background-size: cover;
-      background-position: center;
-      filter: blur(4px);
-      z-index: -1;
-    }
+    <style>
+      /* Background blur overlay */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url("./images/index.jpg");
+        background-size: cover;
+        background-position: center;
+        filter: blur(4px);
+        z-index: -1;
+      }
 
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-      background: transparent;
-    }
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", Arial, sans-serif;
+        height: 100vh;
+        background: transparent;
+      }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6);
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 40px;
-      box-sizing: border-box;
-      animation: fadeIn 2s ease;
-    }
+      .overlay {
+        background: rgba(30, 30, 30, 0.78);
+        min-height: 90vh;
+        width: 92%;
+        max-width: 900px;
+        margin: 48px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 56px 40px 40px 40px;
+        box-sizing: border-box;
+        border-radius: 22px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35),
+          0 1.5px 8px 0 rgba(255, 215, 0, 0.08);
+        backdrop-filter: blur(4px);
+        border: 1.5px solid #ffd700;
+        animation: fadeIn 2s ease;
+      }
 
-    @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 20px;
-      margin-bottom: 10px;
-      max-width: 800px;
-    }
-
-    blockquote {
-      font-style: italic;
-      font-size: 18px;
-      margin: 20px 0;
-      color: #ffd700;
-    }
-
-    nav {
-      margin-top: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
-      font-weight: bold;
-      position: relative;
-    }
-
-    nav a::after {
-      content: '';
-      display: block;
-      width: 0;
-      height: 3px;
-      background: #ffcc00;
-      transition: width 0.3s;
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-    }
-
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    nav i {
-      margin-right: 5px;
-    }
-
-    button {
-      margin-top: 30px;
-      background-color: #ffcc00;
-      color: black;
-      border: none;
-      padding: 12px 24px;
-      font-size: 18px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
-
-    button:hover {
-      background-color: #ffaa00;
-    }
-
-    @media (max-width: 600px) {
       h1 {
-        font-size: 32px;
+        font-family: "Poppins", Arial, sans-serif;
+        font-size: 2.8rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+        color: #ffd700;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
       }
+
       p {
-        font-size: 16px;
+        font-size: 1.18rem;
+        margin-bottom: 14px;
+        max-width: 800px;
+        color: #f8f8f8;
+        font-family: "Poppins", Arial, sans-serif;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
       }
+
+      blockquote {
+        font-style: italic;
+        font-size: 1.1rem;
+        margin: 24px 0 28px 0;
+        color: #ffe066;
+        background: rgba(255, 215, 0, 0.08);
+        border-left: 4px solid #ffd700;
+        padding: 12px 18px;
+        border-radius: 8px;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      nav {
+        margin-top: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 18px;
+      }
+
       nav a {
-        display: block;
-        margin: 10px 0;
+        color: #ffd700;
+        text-decoration: none;
+        padding: 12px 22px;
+        font-size: 1.13rem;
+        font-weight: 600;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.07);
+        box-shadow: 0 1px 4px rgba(255, 224, 102, 0.08);
+        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 6px;
       }
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>Welcome to My Life Story</h1>
-    <p>Hello there! I'm Esther Musenya Mwendo, a passionate Computer Science student who loves technology, creativity, and storytelling.</p>
-    <p>This website tells the story of who I am  from childhood to who I’ve become, and the dreams that light my path forward. </p>
 
-    <blockquote>“The future belongs to those who believe in the beauty of their dreams.”  Eleanor Roosevelt</blockquote>
+      nav a::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 3px;
+        background: #ffd700;
+        transition: width 0.3s;
+        position: absolute;
+        bottom: 6px;
+        left: 18px;
+        border-radius: 2px;
+      }
 
-    <nav>
-      <a href="childhood.html"><i class="fa-solid fa-child"></i> Childhood</a>
-      <a href="education.html"><i class="fa-solid fa-graduation-cap"></i> Education</a>
-      <a href="skills.html"><i class="fa-solid fa-code"></i> Skills</a>
-      <a href="future.html"><i class="fa-solid fa-rocket"></i> Future Goals</a>
-      <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
-    </nav>
+      nav a:hover {
+        background: #ffd700;
+        color: #222;
+        box-shadow: 0 2px 8px rgba(255, 224, 102, 0.18);
+      }
 
-  </div>
-</body>
+      nav i {
+        margin-right: 5px;
+        color: inherit;
+      }
+
+      /* Remove unused button styling */
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 1rem;
+        }
+        .overlay {
+          padding: 24px 6vw 24px 6vw;
+        }
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
+        nav a {
+          font-size: 1rem;
+          padding: 10px 10px;
+        }
+        blockquote {
+          font-size: 1rem;
+          padding: 10px 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>Welcome to My Life Story</h1>
+      <p>
+        Hello there! I'm Esther Musenya Mwendo, a passionate Computer Science
+        student who loves technology, creativity, and storytelling.
+      </p>
+      <p>
+        This website tells the story of who I am from childhood to who I’ve
+        become, and the dreams that light my path forward.
+      </p>
+
+      <blockquote>
+        “The future belongs to those who believe in the beauty of their dreams.”
+        Eleanor Roosevelt
+      </blockquote>
+
+      <nav>
+        <a href="./childhood.html"
+          ><i class="fa-solid fa-child"></i> Childhood</a
+        >
+        <a href="./education.html"
+          ><i class="fa-solid fa-graduation-cap"></i> Education</a
+        >
+        <a href="./skills.html"><i class="fa-solid fa-code"></i> Skills</a>
+        <a href="./future.html"
+          ><i class="fa-solid fa-rocket"></i> Future Goals</a
+        >
+        <a href="./contact.html"
+          ><i class="fa-solid fa-envelope"></i> Contact</a
+        >
+      </nav>
+    </div>
+  </body>
 </html>

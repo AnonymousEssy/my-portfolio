@@ -1,87 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Skills</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-image: url('images/skills.jpg'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-      font-family: Arial, sans-serif;
-      height: 100vh;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore my skills and talents, from programming to creative pursuits."
+    />
+    <title>My Skills</title>
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-image: url("./images/skills.jpg");
+        background-size: cover;
+        background-position: center;
+        font-family: "Poppins", sans-serif;
+        height: 100vh;
+      }
 
-    .overlay {
-      background-color: rgba(0, 0, 0, 0.6); /* darken background */
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      padding: 40px;
-      box-sizing: border-box;
-    }
+      .overlay {
+        background: rgba(30, 30, 30, 0.75);
+        min-height: 90vh;
+        width: 90%;
+        max-width: 800px;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 48px 40px 40px 40px;
+        box-sizing: border-box;
+        border-radius: 18px;
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35),
+          0 1.5px 8px 0 rgba(255, 215, 0, 0.08);
+        backdrop-filter: blur(4px);
+        border: 1.5px solid rgba(255, 255, 255, 0.18);
+      }
 
-    h1 {
-      font-size: 40px;
-      margin-bottom: 20px;
-    }
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
+        color: #ffd700;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      font-size: 20px;
-      text-align: left;
-      max-width: 600px;
-    }
+      ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1.18rem;
+        text-align: left;
+        max-width: 600px;
+        margin-bottom: 32px;
+        margin-top: 0;
+      }
 
-    li {
-      margin-bottom: 12px;
-    }
+      li {
+        margin-bottom: 12px;
+        line-height: 1.7;
+        color: #f8f8f8;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      }
 
-    p {
-      font-size: 18px;
-      margin-top: 20px;
-      max-width: 700px;
-    }
+      p {
+        font-size: 1.18rem;
+        margin-top: 20px;
+        max-width: 700px;
+        color: #f8f8f8;
 
-    a {
-      color: #fff;
-      text-decoration: none;
-      margin-top: 20px;
-      font-size: 18px;
-      font-weight: bold;
-      display: inline-block;
-    }
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+      }
 
-    a:hover {
-      color: #ffcc00;
-    }
-  </style>
-</head>
-<body>
-  <div class="overlay">
-    <h1>✨ My Skills & Talents ✨</h1>
-    <ul>
-      <li <strong>Programming:</strong> Proficient in HTML, CSS, JavaScript, and Python – I enjoy turning ideas into functional and beautiful websites.</li>
-      <li <strong>Creative Skills:</strong> I run my own crochet brand <em>(Yarns with Essy)</em>, and I also dabble in simple graphic design using tools like Canva.</li>
-      <li><strong>Soft Skills:</strong> Excellent communicator, team player, and a natural problem-solver who stays calm and focused under pressure.</li>
-      <li><strong>I am a Fast Learner:</strong> I’m curious and love learning new things – from new tech tools to creative hobbies.</li>
-      <li> <strong>Entrepreneurship:</strong> Running my small business has taught me time management, customer service, and digital marketing.</li>
-    </ul>
+      a {
+        color: #ffd700;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: inline-block;
+        letter-spacing: 0.5px;
+        transition: color 0.2s;
+      }
 
-    <p>
-      I love combining logic and creativity to build useful things, solve real problems, and express who I am. Whether I’m coding a webpage or crocheting a cute bag, I bring passion and purpose to everything I do. 
-    </p>
+      a:hover {
+        color: #fffbe0;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="overlay">
+      <h1>✨ My Skills & Talents ✨</h1>
+      <ul>
+        <li>
+          <strong>Programming:</strong> Proficient in HTML, CSS, JavaScript, and
+          Python – I enjoy turning ideas into functional and beautiful websites.
+        </li>
+        <li>
+          <strong>Creative Skills:</strong> I run my own crochet brand
+          <em>(Yarns with Essy)</em>, and I also dabble in simple graphic design
+          using tools like Canva.
+        </li>
+        <li>
+          <strong>Soft Skills:</strong> Excellent communicator, team player, and
+          a natural problem-solver who stays calm and focused under pressure.
+        </li>
+        <li>
+          <strong>I am a Fast Learner:</strong> I’m curious and love learning
+          new things – from new tech tools to creative hobbies.
+        </li>
+        <li>
+          <strong>Entrepreneurship:</strong> Running my small business has
+          taught me time management, customer service, and digital marketing.
+        </li>
+      </ul>
 
-    <a href="index.html">← Back to Home</a>
-  </div>
-</body>
+      <p>
+        I love combining logic and creativity to build useful things, solve real
+        problems, and express who I am. Whether I’m coding a webpage or
+        crocheting a cute bag, I bring passion and purpose to everything I do.
+      </p>
+
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </body>
 </html>
